@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/valid-parenthesis-string/
+
 from typing import Dict, Tuple
 
 
@@ -16,7 +18,7 @@ class Solution:
         """
 
         # check the memoization
-        key: Tuple[str, int] = tuple([substring, balance])
+        key: Tuple[str, int] = (substring, balance)
         
         if key in self._memo:
             return self._memo[key]

@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional
 
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
@@ -6,8 +6,8 @@ class Solution:
         n = len(nums)
         
         # build left and right multiple arrays
-        left:   List[int] = [None] * n
-        right:  List[int] = [None] * n
+        left:   List[int] = [0] * n
+        right:  List[int] = [0] * n
 
         # initialise left array
         left[0]     = 1
